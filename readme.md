@@ -18,11 +18,11 @@ callback    | レスポンスをJSONPで取得したい場合に設定する。
 - 形式: JSON (callbackを設定した場合はJSONP)
 - 階層なし
 
-パラメータ名                     | 型           | 説明
+パラメータ名                     | 型          | 説明
 --------------------------------|--------------|-----
-targetDate                      | string(date) | 設定した日付。
-dayInEnglish                    | string       | 曜日(英語)。sunday, monday...。
-dayInJapanese                   | string       | 曜日(日本語)。日, 月...。
+targetDate                      | string(date) | 設定した日付
+dayInEnglish                    | string       | 曜日(英語)。sunday, monday...
+dayInJapanese                   | string       | 曜日(日本語)。日, 月...
 endOfThisMonth                  | string(date) | 今月の末日
 startDateOfThisWeekStartsSunday | string(date) | 週の開始日(日曜始まり)
 startDateOfThisWeekStartsMonday | string(date) | 週の開始日(月曜始まり)
@@ -35,7 +35,7 @@ isFirstOfMonth                  | boolean      | 1日かどうか
 isEndOfMonth                    | boolean      | 末日かどうか
 isFirstWorkDayOfMonth           | boolean      | 今月最初の平日かどうか
 isEndWorkDayOfMonth             | boolean      | 今月最後の平日かどうか
-numberOfDateFromLastWorkDay     | int ( >=0 )  | 最後の平日から何日経っているか。<br>昨日が平日なら1。<br>土日を挟んでいたら3。<br>今日が祝日なら0。
+numberOfDateFromLastWorkDay     | int ( >=0 )  | 最後の平日から何日経っているか<br>昨日が平日なら1<br>土日を挟んでいたら3<br>今日が祝日なら0
 
 ※string(date): YYYY-MM-DD形式
 
