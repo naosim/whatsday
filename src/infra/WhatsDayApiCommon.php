@@ -20,7 +20,7 @@ function getWhatsDay($requestMapFactory): WhatsDay {
   $holidayRepositoryImpl = new HolidayRepositoryImpl($holidayList);
 
   $w = WhatsDay::createFromDateTime($targetDateTime, $holidayRepositoryImpl);
-  $json = json_encode($requestMapFactory($w));
+  $json = json_encode($requestMapFactory($w), JSON_PRETTY_PRINT);
 
   // JSONの場合
   if(!isset($_GET['callback'])){
